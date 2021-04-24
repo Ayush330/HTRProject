@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/welcome">
+
+    <fragment
+        android:id="@+id/cameraXUtility"
+        android:name="com.example.htrproject.CameraXUtility"
+        android:label="CameraXUtility" >
+        <action
+            android:id="@+id/action_cameraXUtility_to_preview"
+            app:destination="@id/preview" />
+    </fragment>
+    <fragment
+        android:id="@+id/preview"
+        android:name="com.example.htrproject.Preview"
+        android:label="Preview" >
+        <argument
+            android:name="imageUri"
+            app:argType="string"
+            android:defaultValue='""' />
+    </fragment>
+    <fragment
+        android:id="@+id/welcome"
+        android:name="com.example.htrproject.welcome"
+        android:label="welcome" >
+        <action
+            android:id="@+id/action_welcome_to_cameraXUtility"
+            app:destination="@id/cameraXUtility" />
+    </fragment>
+</navigation>
