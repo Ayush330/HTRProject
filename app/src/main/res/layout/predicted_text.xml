@@ -1,41 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.core.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#99E6B3">
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <LinearLayout
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/aclonica"
-        android:paddingLeft="5dp"
-        android:textAlignment="center"
-        android:textColor="#34568b"
-        android:text="The Predicted Text Is:"
-        android:textSize="28sp" />
-
-    <View
-        android:id="@+id/divider"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/purple_700"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="86dp" />
+        android:layout_height="match_parent"
+        android:background="#99E6B3">
 
-    <TextView
-        android:id="@+id/predict"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="5dp"
-        android:fontFamily="@font/aldrich"
-        android:text="ayush"
-        android:textSize="24sp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:paddingLeft="5dp"
+            android:text="The Predicted Text Is:"
+            android:textAlignment="center"
+            android:textColor="#34568b"
+            android:textSize="28sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/purple_700"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="86dp" />
+
+        <TextView
+            android:id="@+id/predict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="5dp"
+            android:text="ayush"
+            android:textSize="24sp" />
 
 
-</LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

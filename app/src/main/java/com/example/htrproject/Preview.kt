@@ -46,7 +46,7 @@ class Preview : Fragment(R.layout.preview)
                 .addOnSuccessListener { visionText ->
                     Log.i("Ayush",visionText.text)
                     predictedText = visionText.text
-                    Snackbar.make(ok,"Successful .",Snackbar.LENGTH_LONG).show()
+                    Snackbar.make(ok,"Image is processed successfully.",Snackbar.LENGTH_LONG).show()
 
                 }
                 .addOnFailureListener { e ->
