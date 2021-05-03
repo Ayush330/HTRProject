@@ -214,4 +214,6 @@ class CameraXUtility : Fragment(R.layout.camerax)
         cameraProvider.unbindAll()
         Log.i("Ayush","OnStop called.")
     }
+
+
 }

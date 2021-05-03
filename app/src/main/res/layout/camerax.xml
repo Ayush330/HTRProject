@@ -47,6 +47,8 @@
         android:id="@+id/button"
         android:backgroundTint="@color/teal_200"
         app:tint="@null"
+        app:elevation="40dp"
+        android:elevation="40dp"
         app:fabAnimationMode="slide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
